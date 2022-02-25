@@ -238,12 +238,10 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  const nombr = 'Marco Antonio',  lastnam = 'Banda';
-  var nombre = nombr, apellido = lastnam;
-  return nombre, apellido;
+  console.log(nombre + apellido);
 
 }
-   combinarNombres(nombr, lastnam);
+   combinarNombres('Marco Antonio ', 'Banda');
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
