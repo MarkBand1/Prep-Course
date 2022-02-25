@@ -170,8 +170,8 @@ elevarAlCuadrado(6);
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-   
-  return math.pow(num,3);
+   var powerthird = math.pow(num,3);
+  return powerthird;
 }
 elevarAlCubo(7);
 
