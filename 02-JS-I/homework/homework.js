@@ -32,7 +32,7 @@ return str;
 }
 devolverString('F');
 
-function sumar(x, y) {
+function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
@@ -40,7 +40,7 @@ function sumar(x, y) {
 
   return sumat;//retorna con variable
 }
-sumar(1,5); //resultados
+suma(1,5); //resultados
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
