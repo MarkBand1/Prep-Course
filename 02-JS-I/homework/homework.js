@@ -179,7 +179,7 @@ function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   var powern = Math.pow(num,exponent);
-  return powercube;
+  return powern;
   
 }
 elevar(8);
