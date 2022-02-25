@@ -178,7 +178,7 @@ elevarAlCubo(7);
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var powern = math.pow(num,exponent);
+  var powern = Math.pow(num,exponent);
   return powercube;
   
 }
