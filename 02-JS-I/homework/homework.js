@@ -187,7 +187,7 @@ elevar(8);
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var redondo = math.round(num);
+  var redondo = Math.round(num);
   return redondo;
 
 }
@@ -196,7 +196,7 @@ redondearNumero(3.141513);//3
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var redonArrib = math.floor(num);
+  var redonArrib = Math.floor(num);
   return redonArrib;
 }
 redondearHaciaArriba(5.9);//6
@@ -229,7 +229,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
- 
+ return "Hello World" + str;
 }
 agregarSimboloExclamacion('!');
 
