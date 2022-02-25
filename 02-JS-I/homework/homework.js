@@ -72,7 +72,7 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  if(x === y)
+  if(x == y)//*** 
   {
     return true;//verdadero
     }
@@ -89,7 +89,7 @@ function tienenMismaLongitud(str1, str2) {
 
   var str1 = nom1str, str2 = nom2str;
   
-  if(str1 = str2)
+  if(str1 == str2)
   {
      return true;
   }
@@ -196,7 +196,7 @@ redondearNumero(3.141513);//3
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var redonArrib = Math.floor(num);
+  var redonArrib = Math.ceil(num);
   return redonArrib;
 }
 redondearHaciaArriba(5.9);//6
