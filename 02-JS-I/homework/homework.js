@@ -98,12 +98,12 @@ function tienenMismaLongitud(str1, str2) {
 }
 tienenMismaLongitud('perro','Rompo');
 
-function menosQueNoventa(nume) {
+function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  if(nume<=90)
+  if(num < 90)
   {
     return true;
   }
@@ -116,7 +116,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num>= 50)
+  if(num > 50)
   {
     return true;
   }
