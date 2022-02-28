@@ -98,12 +98,12 @@ function tienenMismaLongitud(str1, str2) {
 }
 tienenMismaLongitud('perro','Rompo');
 
-function menosQueNoventa(num) {
+function menosQueNoventa(nume) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  if(num<=90)
+  if(nume<=90)
   {
     return true;
   }
@@ -238,8 +238,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  console.log(nombre + apellido);
-
+  
+ return nombre, apellido;
 }
    combinarNombres('Marco Antonio ', 'Banda');
 
