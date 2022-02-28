@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 == 1.05;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -72,11 +72,15 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  if(x == y)//*** 
+  if(x === y)//*** 
   {
     return true;//verdadero
     }
-    return false;//falso
+    else
+    {
+      return false;
+    }
+    
 }
 sonIguales(4,4);
 
@@ -84,17 +88,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  const nom1str = 'Perro';
-  const nom2str = 'Rompo';
-
-  var str1 = nom1str, str2 = nom2str;
-  
-  if(str1 == str2)
-  {
-     return true;
-  }
-  
-      return false;
+  str1.lenght === str2.lenght;
 }
 tienenMismaLongitud('perro','Rompo');
 
@@ -150,7 +144,7 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
    
- if(num %3 == 0)
+ if(num %2 == 1)
  {
    return true;
  }
@@ -215,14 +209,17 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
-  if(numero >= 0)
+  if(numero === 0)
   {
     
-    return "Es positivo";
+    return false;
   }
-    
-    return "Es negativo";
-  
+  else if(numero > 0){
+     return "Es positivo";
+  }  
+  else{
+    return "Es Negativo";
+  }
 }
 esPositivo(5);
 
@@ -230,7 +227,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
- console.log("Hola mundo"+ str);
+return"Hola mundo"+ str;
 }
 agregarSimboloExclamacion('!');
 
@@ -247,7 +244,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-   console.log('Hola '+ nombre);
+   return'Hola '+ nombre + '!';
    
 }
 obtenerSaludo('Marco');
@@ -303,13 +300,17 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
-  if(letra.lenght !==1)
+  if(letra.lenght >= 1)
   {
     return "Dato Incorrecto";
   }
     if( letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u')
     {
-      return "dato es correcto";
+      return "Es vocal";
+    }
+    else
+    {
+      return "Dato incorrecto";
     }
 }
 esVocal('e');
