@@ -5,7 +5,18 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+if(x > y)
+  {
+    console.log(' x Es el numero más grande: ', x);
+  }
+  else if( x < y)
+  {
+    console.log('Y es el número más grande: ', y);
+  }
+  else
+    console.log(' ambos son iguales', x, y);
 }
+obtenerMayor(5,5);
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
@@ -93,12 +104,17 @@ function esVerdadero(valor){
 
 }
 
-function tablaDelSeis(){
+function tablaDelSeis(i){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+  var i, a = 6;
+  for(i=1; i<= 10; i++)
+  {
+    console.log(i*a);
+  }
 }
+tablaDelSeis(i);
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
