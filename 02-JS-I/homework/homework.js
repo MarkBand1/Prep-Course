@@ -215,10 +215,10 @@ function esPositivo(numero) {
     return false;
   }
   else if(numero > 0){
-     return "Es positivo";
+     return 'Es Positivo';
   }  
   else{
-    return "Es Negativo";
+    return 'Es Negativo';
   }
 }
 esPositivo(5);
