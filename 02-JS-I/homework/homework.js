@@ -215,13 +215,13 @@ function esPositivo(numero) {
     return false;
   }
   else if(numero > 0){
-     return "Es Positivo " + numero + '!';
+     return "Es Positivo ";
   }  
   else{
-    return "Es Negativo " + numero + '!';
+    return "Es Negativo ";
   }
 }
-esPositivo(5);
+esPositivo(1);
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
