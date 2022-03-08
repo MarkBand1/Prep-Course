@@ -201,10 +201,9 @@ function esVerdadero(valor){
    return 'Soy verdadero';
 
  }
- else
- {
+
    return 'Soy Falso';
- }
+
 }
 esVerdadero(true);
 
