@@ -7,14 +7,14 @@ function obtenerMayor(x, y) {
   // Tu código:
 if(x > y)
   {
-    console.log(' x Es el numero más grande: ', x);
+    return 'x Es el numero más grande: ';
   }
   else if( x < y)
   {
-    console.log('Y es el número más grande: ', y);
+    return 'Y es el número más grande: ';
   }
   else
-    console.log(' ambos son iguales', x, y);
+    return 'ambos son iguales';
 }
 obtenerMayor(5,5);
 
@@ -24,10 +24,10 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
   if(edad > 18)
   {
-    console.log("allowed");
+    return "allowed";
   }
   else 
-     console.log("Not Allowed");
+     return"Not Allowed";
 }
 mayoriaDeEdad(15);
   
@@ -39,13 +39,13 @@ function conection(status) {
   //Devolver el estado de conexión de usuario en cada uno de los casos.
    if(status  == 1)
    {
-     console.log("Online");
+     return "Online";
    }
    else if(status == 2) {
-     console.log("away");
+     return"away";
    }
    else
-   console.log(Offline);
+    return 'Offline';
 }
 conection(2);
 
@@ -58,14 +58,14 @@ function saludo(idioma) {
   // Tu código:
 if(idioma == 'aleman')
 {
-  console.log("Guten Tag!");
+  return "Guten Tag!";
    }
 else if(idioma == 'mandarin'){
-  console.log("Ni Hao!");
+  return "Ni Hao!";
      }
 else if(idioma == 'ingles'){
      {
-console.log("Hello!");
+   return "Hello!";
      }
   }
 }
@@ -237,11 +237,10 @@ tablaDelSeis(6);
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
- if(numero == 99 && numero <100)
- {
+ if(numero == 99 && numero <1000){
    return true;
  } 
- else false;
+ return false;
 }
 tieneTresDigitos(80);
 
