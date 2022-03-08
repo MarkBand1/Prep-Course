@@ -70,7 +70,7 @@ else{
 }
 saludo('aleman');
 
-function colors(color) { 
+function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
   //En caso que el color recibido sea "blue", devuleve --> "This is blue"
   //En caso que el color recibido sea "red", devuleve --> "This is red"
@@ -78,29 +78,17 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  switch (color){
-    case  'blue':
-
-      return"This color is blue";
-       break;
-
-    case 'red':
-
-      return'This color is red';
-      break;
-
-    case 'green':
-       
-      return'This color is green';
-      break;
-    case 'orange':
-      
-      return'This color is orange';
-      break;
-
-    default:
-      return'Color is not Found'; 
-       
+  switch(color) {
+    case "blue":
+      return "This is blue";
+    case "red": 
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
+    default: 
+    return "Color not found";
   }
 }
   colors('blue');
@@ -150,15 +138,15 @@ function esEntero(numero) {//*
 }
 esEntero(0.9);
 
-function fizzBuzz(numero) {//*
+function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-   if(numero % 15 === 0) return 'fizzBuzz';
-   if(numero % 3 === 0) return 'fizz';
-   if(numero % 5 === 0) return 'buzz';
-   return numero;
+  if(numero % 15 === 0) return 'fizzbuzz';
+  if(numero % 3 === 0) return 'fizz';
+  if(numero % 5 === 0) return 'buzz';
+  return numero;
 }
 fizzBuzz(5);
 
@@ -193,12 +181,12 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if( numero == 0 || numero == 1) {
-  return false;
-}
-  for(let i = 2; i < numero; i++) {
+  // Test
+  if( numero < 2) return false;
+  if(numero === 2) return true;
+  for(var i = 2; i < numero; i++) {
     if(numero % i === 0) {
-      return true;
+      return false;
     }
   }
   return true;
@@ -234,12 +222,12 @@ tablaDelSeis(6);
 
 
 function tieneTresDigitos(numero){
-  //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
+  //Leer un número entero y determinar si tiene 3 dígitos.
   //Escribe tu código aquí
- if(numero == 99 && numero <1000){
-   return true;
- } 
- return false;
+  if(numero > 99 && numero < 1000){
+    return true
+  }
+  return false
 }
 tieneTresDigitos(80);
 
