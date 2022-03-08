@@ -99,7 +99,7 @@ function colors(color) {
       break;
 
     default:
-      return'Undefined'; 
+      return'Color is not Found'; 
        
   }
 }
