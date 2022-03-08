@@ -203,18 +203,18 @@ function numeroRandom() {
 }
 numeroRandom(3);
 
-function esPositivo(numero) {
+function esPositivo(str) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
-  if(numero === 0)
+  if(str === 0)
   {
     
     return false;
   }
-  else if(numero > 0){
+  else if(str > 0){
      return "Es Positivo ";
   }  
   else{
