@@ -205,7 +205,7 @@ function esVerdadero(valor){
    return 'Soy Falso';
 
 }
-esVerdadero(true);
+esVerdadero(false);
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
