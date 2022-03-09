@@ -12,16 +12,16 @@ devolverPrimerElemento(0);
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  var  array = [1,2,3,4,5];
+  array = [1,2,3,4,5];
   return array [array.length-1];
 }
-devolverUltimoElemento(4);
+devolverUltimoElemento(5);
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-var array = [true, 1, 'drink', 456, 'salt'];
+array = [true, 1, 'drink', 456, 'salt'];
 return array.length;
 }
 obtenerLargoDelArray(4);
