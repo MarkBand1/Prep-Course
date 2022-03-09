@@ -1,29 +1,27 @@
 // No cambies los nombres de las funciones.
 
 function devolverPrimerElemento(array) {
-  // Devuelve el primer elemento de un array
+  // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  return array[0];
+var array = [3,2,1];
+return array [0];
 }
-devolverPrimerElemento(0);
+devolverPrimerElemento(1);
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  array = [1,2,3,4,5];
+  var  array = [1,2,3,4,-1];
   return array [array.length-1];
 }
-devolverUltimoElemento();
+devolverUltimoElemento(5);
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-array = [true, 1, 'drink', 456, 'salt'];
-return array.length;
 }
-obtenerLargoDelArray(4);
 
 
 function incrementarPorUno(array) {
