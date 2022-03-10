@@ -21,15 +21,25 @@ devolverUltimoElemento(5);
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-}
-
+  var array = [1,2,3,4,-1];
+  return array.length;
+} 
+obtenerLargoDelArray(5);
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var nuevoArray = [];
+    for(var i = 0; i < array.length; i++) {
+    nuevoArray[i] = array[i]+1;
+  }
+
+  return nuevoArray.push();
+
 }
+incrementarPorUno(4);
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
