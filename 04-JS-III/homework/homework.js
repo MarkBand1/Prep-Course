@@ -24,7 +24,7 @@ function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
   var array = [1,2,3,4,-1];
-  return array.length;
+  return array.length; 
 } 
 obtenerLargoDelArray(1);
 
@@ -61,7 +61,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   array.unshift(elemento);
   return array;
 }
-
+agregarItemAlComienzoDelArray(1);
 
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
