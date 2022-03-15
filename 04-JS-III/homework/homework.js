@@ -3,6 +3,7 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+array.length === 3;
 var array = [3,2,1];
 return array [0];
 }
@@ -12,10 +13,11 @@ devolverPrimerElemento(1);
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  array.length === 3;
   var  array = [1,2,3,4,-1];
   return array [array.length-1];
 }
-devolverUltimoElemento(5);
+devolverUltimoElemento(1);
 
 
 function obtenerLargoDelArray(array) {
@@ -24,30 +26,32 @@ function obtenerLargoDelArray(array) {
   var array = [1,2,3,4,-1];
   return array.length;
 } 
-obtenerLargoDelArray(5);
+obtenerLargoDelArray(1);
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray = [];
-    for(var i = 0; i < array.length; i++) {
-    nuevoArray[i] = array[i]+1;
+  var nuevoIncremento = [3,5,6,7];
+    for(var i = 0 ; i < array.length ; i++) {
+    nuevoIncremento.push(array[i]+1);
+
   }
-
-  return nuevoArray.push();
-
+   return nuevoIncremento;
 }
-incrementarPorUno(4);
+incrementarPorUno(1);
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  var array = [ "gibson" ,"jackson","fender"];
+  var elemento = "Lespaul";
+  return array.push(elemento);
 }
-
+agregarItemAlFinalDelArray(1);
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
