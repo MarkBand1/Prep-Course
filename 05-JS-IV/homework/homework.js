@@ -110,12 +110,15 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
+  return usuario['password'] === password;
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+  usuario.password = nuevaPassword;
+  return usuario;
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -123,7 +126,13 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
+  var usuario = {
+    amigos: ['Pedro', 'chucho', 'Daniel', 'José'],
+   }
+   usuario.amigos.push(nuevoAmigo);
+   return usuario;
 }
+agregarAmigo('Marco', 'Maria');
 
 function pasarUsuarioAPremium(usuarios) {
   // "usuarios" es un array de objetos "usuario"
