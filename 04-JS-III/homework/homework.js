@@ -7,7 +7,7 @@ array.length === 3;
 var array = [3,2,1];
 return array [0];
 }
-devolverPrimerElemento(1);
+
 
 
 function devolverUltimoElemento(array) {
@@ -17,7 +17,7 @@ function devolverUltimoElemento(array) {
   var  array = [1,2,3,4,-1];
   return array [array.length-1];
 }
-devolverUltimoElemento(1);
+
 
 
 function obtenerLargoDelArray(array) {
@@ -26,7 +26,7 @@ function obtenerLargoDelArray(array) {
   var array = [1,2,3,4,-1];
   return array.length; 
 } 
-obtenerLargoDelArray(1);
+
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -40,18 +40,19 @@ function incrementarPorUno(array) {
   }
    return nuevoIncremento;
 }
-incrementarPorUno(1);
+
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  var array = [ "gibson" ,"jackson","fender"];
+  var array = []
+   var nuevoarray =[ "gibson" ,"jackson","fender"];
   var elemento = "Lespaul";
   return array.push(elemento);
 }
-agregarItemAlFinalDelArray(1);
+
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
@@ -61,7 +62,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   array.unshift(elemento);
   return array;
 }
-agregarItemAlComienzoDelArray(1);
+
 
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
@@ -71,7 +72,7 @@ function dePalabrasAFrase(palabras) {
   // Tu código:
   return palabras.join(' ');
 }
-dePalabrasAFrase("Lo lograré");
+
 
 
 function arrayContiene(array, elemento) {
@@ -85,7 +86,7 @@ function arrayContiene(array, elemento) {
   }
   return false;
 }
-arrayContiene();
+
 
 
 function agregarNumeros(numeros) {
@@ -99,7 +100,7 @@ function agregarNumeros(numeros) {
   }
   return false;
 }
-agregarNumeros(3);
+
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
@@ -108,7 +109,7 @@ function promedioResultadosTest(resultadosTest) {
   return agregarNumeros(resultadosTest) / resultadosTest.length;
 
 }
-promedioResultadosTest();
+
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
@@ -122,7 +123,7 @@ function numeroMasGrande(numeros) {
   }
   return maximo;
 }
-numeroMasGrande();
+
 
 
 function multiplicarArgumentos() {
@@ -136,7 +137,7 @@ function multiplicarArgumentos() {
   }
   return total;
 }
-multiplicarArgumentos();
+
 
 
 function cuentoElementos(arreglo){
@@ -162,7 +163,7 @@ function diaDeLaSemana(numeroDeDia) {
   }
   return "Es dia Laboral"
 } 
-diaDeLaSemana();
+
 
 
 function empiezaConNueve(n) {
@@ -175,7 +176,7 @@ function empiezaConNueve(n) {
   }
   return false
 }
-empiezaConNueve();
+
 
 
 function todosIguales(arreglo) {
@@ -189,7 +190,7 @@ function todosIguales(arreglo) {
   }
   return true
 } 
-todosIguales();
+
 
 
 function mesesDelAño(array) {
@@ -210,7 +211,6 @@ function mesesDelAño(array) {
       return nuevoArray;
   }
 }
-mesesDelAño();
 
 
 function mayorACien(array) {
@@ -225,7 +225,7 @@ function mayorACien(array) {
   }
   return nuevoArray;
 }
-mayorACien();
+
 
 
 function breakStatement(numero) {
@@ -252,7 +252,7 @@ function breakStatement(numero) {
       return array;
   }
 }
-breakStatement();
+
 
 
 function continueStatement(numero) {
@@ -273,7 +273,6 @@ function continueStatement(numero) {
   }
   return array;
 }
-continueStatement();
 
 
 // No modificar nada debajo de esta línea
