@@ -26,7 +26,7 @@ function agregarPropiedad(objeto, property) {
   objeto[property] = null;
   return objeto; 
 }
-agregarPropiedad('ojos', 'azules');
+//agregarPropiedad('ojos');
 
 function invocarMetodo(objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
@@ -42,28 +42,50 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+  var result = objetoMisterioso.numeroMisterioso * 5;
 
+  return result;
 }
+multiplicarNumeroDesconocidoPorCinco(5);
 
 function eliminarPropiedad(objeto, unaPropiedad) {
   // Elimina la propiedad de objeto cuyo nombre está pasado por el parametro unaPropiedad 
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  delete objeto[unaPropiedad];
+  return objeto;
 }
+// let una propiedad ="altura"
 
 function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
+var obj = {
+     nombre: nombre,
+     email: email,
+     password: password,
+     };
+ return obj;
 }
+nuevoUsuario('Patricio', 'patop@gmail.com', 'P4t4$P');
+
 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+if(usuario['email'])
+ {
+   return true;
+ }
+ else
+   {
+     return false;
+   }
 }
+tieneEmail(true);
 
 
 
@@ -72,7 +94,16 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(objeto[propiedad])
+  {
+    return true;
+  }
+  else{
+    return false;
+  }
+  //return objeto.hasOwnProperty(propiedad);
 }
+//tienePropiedad(eye, blue);
 
 function verificarPassword(usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
