@@ -1,0 +1,44 @@
+h1 {
+    color:chartreuse;
+    text-align: center;
+    
+
+}
+body{
+ 
+    background-color:powderblue;
+
+}
+h3{
+
+    color: blueviolet;
+    text-align: center;
+    font-size: 18px;
+
+}
+h4{
+
+   color: blueviolet;
+   text-align: center;
+
+}
+
+p{
+
+   
+    text-align:50px;
+    font-size: 18px;
+
+}
+
+
+#img.center{
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  padding: 20px;
+  width: 400;
+  height: 20px;
+}
